@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/jason-lieb/mongodb-social-network-api/issues"
   },
-  "homepage": "https://github.com/jason-lieb/mongodb-social-network-api#readme",
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^7.0.1"
