@@ -12,6 +12,7 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
+      get: (date) => date.toLocaleString('en-US'),
     },
     username: {
       type: String,
@@ -31,5 +32,4 @@ thoughtSchema.virtual('reactionCount').get(function () {
   return this.reactions?.length
 })
 
-const Thought = model('thought', thoughtSchema)
-module.exports = Thought
+module.exports = model('thought', thoughtSchema)
