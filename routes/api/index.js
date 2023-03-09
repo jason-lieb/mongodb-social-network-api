@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const users = require('./users')
-const thoughts = require('./thoughts')
+const users = require('./usersRoute')
+const thoughts = require('./thoughtsRoute')
 
 router.use('/users', users)
 router.use('/thoughts', thoughts)
